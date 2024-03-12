@@ -1,0 +1,70 @@
+---
+ const  { texto } = Astro.props;
+ const  { titulo } = Astro.props;
+ const  { imagen_mobile } = Astro.props;
+ const  { imagen_desktop } = Astro.props;
+ const  { link } = Astro.props;
+---
+
+
+<tr class="content-row"
+style="width: 100%; display: table !important;">
+<td align="center" style="line-height: 0px; mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; padding: 15px 40px 15px 40px;">
+
+    <table class="container"
+        style="width:100%;"
+        cellspacing="0" cellpadding="0" border="0">
+        <tbody class="content-body"
+            style="width: 100%; display: table !important">
+            <tr class="content-row"
+                style=" width: 100%; display: table !important; ">
+
+                <td valign="middle" align="center" class="img-mobile td-responsive"
+                style="line-height:0px; mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; max-width:100%;"
+               >
+                <a href={ link } 
+                    style="text-decoration:none;display:inline-block; margin-top: 0px;line-height: 0px;"
+                    target="_blank">
+                    <img 
+                        style="vertical-align: baseline; display: block; width: 100%; max-width: 100%; height:216px"
+                        src={ imagen_mobile }
+                        alt="inConcert"
+                        class=" img-mobile">
+                </a>
+              </td>
+               
+              <td valign="middle" class="padding-mobile td-responsive"
+                    style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; text-align: left !important; font-family: Helvetica, sans-serif;padding-bottom: 0px;">
+                    <h3
+                    class="dhx-p-smaller ic-margin-card"
+                    style="text-align: left; color: #273480; margin: 0px 0px 4px 0px"
+                    >
+                    <Fragment set:html={titulo} />
+                  </h3>
+                   
+                    <p class="dhx-p-smaller ic-margin-card"
+                        style="text-align: left; color: #353535; margin-bottom: 0px;">
+                        <Fragment set:html={texto} />
+                    </p>
+              </td>
+              <td valign="middle" align="center" class="img-desktop td-responsive"
+                style="line-height:0px; mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+               >
+                <a href={ link } 
+                    style="text-decoration:none;display:inline-block; margin-top: 0px;line-height: 0px;"
+                    target="_blank">
+                    <img 
+                        style="vertical-align: baseline; display: block; width: 254px; height:225px"
+                        src={ imagen_desktop }
+                        alt="inConcert"
+                        class=" img-1 img-desktop">
+                </a>
+              </td>
+              
+            </tr>
+        </tbody>
+    </table>
+</td>
+</tr>
+
+ 

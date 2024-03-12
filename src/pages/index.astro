@@ -1,0 +1,108 @@
+---
+import '../Styles/Style.css';
+import BaseLayout from '../Layout/layout.astro';
+import Banner from '../Components/Banner.astro';
+import Line from '../Components/line.astro';
+import Margen from '../Components/Margen.astro';
+import Titulos from '../Components/Titulos.astro';
+import Header from '../Components/header.astro';
+import Card_responsive from '../Components/card_responsive.astro';
+import Fold from '../Components/Fold.astro';
+import Card_fullwhide from '../Components/card_fullwide.astro';
+import Card_fullwhide_v2 from '../Components/card_fullwide_v2.astro';
+import Card_fullwhide_v3 from '../Components/card_fullwide_v3.astro';
+import Zocalo from '../Components/zocalo.astro';
+import Zocalo_Opinion from '../Components/Zocalo_opinion.astro';
+import Footer from '../Components/footer.astro';
+---
+
+<BaseLayout>
+<html lang="es">
+	<head>
+		<Header />
+	</head>
+	<body>
+	<Banner imgbanner_lg="./img/ic-mail-es-herobanner-newsletter-version-interna-lg@2x.png" imgbanner_sd="./img/ic-mail-es-herobanner-newsletter-version-interna-sd@2x.png"/>
+	<Fold color_bk="ic-color-white">
+		<Margen padding="padding: 0px 40px;">
+			<p style="color:#353535; text-align: left; margin: 34px 0px 10px 0px">👋 ¡Hola !</p>
+			<p style="color:#353535; text-align: left; margin: 0px 0px 31px 0px">Bienvenido a una nueva edición de inConcert Insider. ¿IA conversacional para multiplicar tus ingresos? ¿Innovación, compliance y seguridad en la nube? No te pierdas estas lecturas y novedades que hemos preparado especialmente para ti.</p>
+		</Margen>
+		
+		<Line style="padding: 0px 40px 34px 40px" />
+
+		<Titulos 
+		texto='<strong>inConcert Lab</strong>'
+		texto2='Innovación en tus manos'
+		/>
+		<Card_responsive 
+		imagen_mobile="./img/ic-mail-es-img1-newsletter-marzo-sd@2x.jpg"
+		imagen_desktop="./img/ic-mail-es-img1-newsletter-marzo-lg@2x.jpg"
+		clases="dhx-p-smaller ic-margin-card"
+		texto='La seguridad es prioridad para las organizaciones, donde la protección y el procesamiento de datos están en constante evolución. Nuestro CIO te cuenta todo <a href="https://blog.inconcertcc.com/es/inconcert-experts-innovacion-compliance-seguridad-en-la-nube-y-mas-alla/" title="aquí">aquí</a>.'/>
+		
+		<Card_responsive 
+		imagen_mobile="./img/ic-mail-es-img2-newsletter-marzo-sd@2x.jpg"
+		imagen_desktop="./img/ic-mail-es-img2-newsletter-marzo-lg@2x.jpg"
+		clases="dhx-p-smaller ic-margin-card"
+		texto='¿Ya conoces el poder de la IA con tecnología de voz? En <a href="https://blog.inconcertcc.com/es/3-formas-de-optimizar-tu-contact-center-omnicanal-con-voicebots/" title="esta nota">esta nota</a> te compartimos 3 formas de optimizar tu contact center omnicanal con Voicebots.'/>
+		
+		<Card_responsive 
+		imagen_mobile="./img/ic-mail-es-img3-newsletter-marzo-sd@2x.jpg"
+		imagen_desktop="./img/ic-mail-es-img3-newsletter-marzo-lg@2x.jpg"
+		clases="dhx-p-smaller ic-margin-card ic-margin-card-last"
+		texto='La IA conversacional puede ser la clave que necesitas para multiplicar tus oportunidades de ingresos. <a href="https://info.inconcertcc.com/p/oportunidades-de-ingresos-de-la-IA-conversacional" title="esta nota">Descubre</a> insights clave para aprovecharla al máximo.' />
+		<Margen>
+			<p style="color:#353535; text-align: center;" class="ic-links"><a  
+				href="https://inconcertcc.com/es/recursos" title="Recursos"><strong>Accede a más recursos <br class="img-mobile">y contenidos exclusivos</strong> </a></p>
+		</Margen>
+	</Fold>
+	
+	<Fold color_bk="ic-color-gris clase_border" >
+		<Margen padding="padding: 35px 40px 0px 40px; border-radis:12px;"/>
+			<Titulos 
+			texto="<strong>inConcert Event</strong>"
+			texto2="Hitos de la industria"/>
+
+		<Card_fullwhide 
+		imagen_desktop="./img/ic-mail-es-img4-newsletter-marzo-lg@2x.jpg"
+		imagen_mobile="./img/ic-mail-es-img4-newsletter-marzo-sd@2x.jpg"
+		titulo="III Congreso Contact Center"
+		texto='Fuimos parte del III Congreso Contact Center de AEERC, celebrado Madrid junto a más de 180 referentes y líderes del sector. Conoce todos los detalles del encuentro <a href="https://inconcertcc.com/es/empresa/noticias/inconcert-estuvo-en-el-iii-congreso-contact-center-de-aeerc" title="aquí">aquí</a>.'; />
+		
+		<Card_fullwhide 
+		imagen_desktop="./img/ic-mail-es-img5-newsletter-marzo-lg@2x.jpg"
+		imagen_mobile="./img/ic-mail-es-img5-newsletter-marzo-sd@2x.jpg"
+		titulo="Global CX Forum"
+		texto='¡Nos vemos en el Global CX Forum México! Visítanos en el stand S17 y no te pierdas nuestra charla “Cómo la IA Generativa revoluciona tus resultados: 5 casos de uso".'; />
+
+		<Card_fullwhide 
+		imagen_desktop="./img/ic-mail-es-img6-newsletter-marzo-lg@2x.jpg"
+		imagen_mobile="./img/ic-mail-es-img6-newsletter-marzo-sd@2x.jpg"
+		titulo="LEAP 2024 "
+		texto='¡Seguimos creciendo en EMEA! Estuvimos en Riyadh para evento tech más concurrido del mundo junto a nuestros partners trustangle y PLATX.'; />
+
+		<!-- <Card_fullwhide_v2 
+		imagen_desktop="./img/image.png"
+		imagen_mobile="./img/image2.png"
+		titulo="III Congreso Contact Center"
+		texto='Fuimos parte del III Congreso Contact Center de AEERC, celebrado Madrid junto a más de 180 referentes y líderes del sector. Conoce todos los detalles del encuentro <a href="https://inconcertcc.com/es/empresa/noticias/inconcert-estuvo-en-el-iii-congreso-contact-center-de-aeerc" title="aquí">aquí</a>.'; />
+		
+		<Card_fullwhide_v3 
+		imagen_desktop="./img/image.png"
+		imagen_mobile="./img/image2.png"
+		titulo="Global CX Forum"
+		texto='¡Nos vemos en el Global CX Forum México! Visítanos en el stand S17 y no te pierdas nuestra charla “Cómo la IA Generativa revoluciona tus resultados: 5 casos de uso".'; />
+		-->
+		<Margen padding="padding: 0px 0px 22px 0px;"/>
+	</Fold>
+	
+		<!--<Zocalo_Opinion texto='<strong style="color: #273480;">¿Te ha gustado esta información?</strong> <br>Cuéntanos qué te ha parecido, tú <br class="img-mobile">opinión nos importa'/>-->
+		<Fold color_bk="ic-color-white" >
+			<Margen padding="padding: 20px 40px;"/>
+			<Footer />
+			<Margen padding="padding: 20px 40px;"/>
+		</Fold>
+	</body>
+</html>
+</BaseLayout>

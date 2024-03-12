@@ -1,0 +1,27 @@
+---
+const  { imgbanner_sd } = Astro.props;
+const  { imgbanner_lg } = Astro.props;
+
+---
+
+<table class="emailContainer container" width="600" style="background-color:#fff; border-bottom:none; width:100%; max-width: 600px; min-width: 375px; border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-radius: 12px 12px 0px 0px;"
+    cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr class="content-row" style="width: 100%; display: table !important">
+            <td style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;width: 82%">
+               
+                <img  width="600" class="img-responsive img-mobile"
+                    style="width: 600px; max-width: 100%; border-radius: 12px;"
+                    src={imgbanner_sd}
+                    alt="Hero banner"
+                    >
+                <img  width="600" class="img-responsive img-desktop"
+                style="width: 600px; max-width: 100%; border-radius: 12px;"
+                    src={imgbanner_lg}
+                    alt="Hero Banner"
+                    >       
+            </td>
+        </tr>
+    </tbody>
+</table>
+

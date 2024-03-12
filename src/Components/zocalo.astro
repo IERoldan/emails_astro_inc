@@ -1,0 +1,74 @@
+	---
+    const  { Link } = Astro.props;
+    const  { Caption } = Astro.props;
+    const  { Backgroundcolor } = Astro.props;
+    const  { ButtonColor } = Astro.props;
+    const  { texto } = Astro.props;
+    ---
+    
+            <table class="emailContainer container" width="600" style="width:100%; background-color:#3366FF; border-radius: 12px; border-bottom:none; width:100%; max-width: 600px; min-width: 375px; border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                cellspacing="0" cellpadding="0" border="0">
+                <tbody class="content-body"
+                    style="width: 100%; display: table !important">
+                    <tr
+                        style="width: 100%; display: table !important">
+
+                        <td class="content-row"
+                            style=" width: 100%; line-height:45px; mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;line-height: 150%; text-align: left;padding: 32px 30px 0px 30px;">
+
+                            <p class="dhx-p"
+                                style="line-height: 24px; text-align: center; font-size: 18px; color: #fff; margin-bottom:10px;">
+                                <Fragment set:html={texto} />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr style="width: 100%; display: table !important">
+                        <td
+                            style=" width: 100%; line-height:47px; mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;line-height: 150%; text-align: left;padding: 15px 0px 10px 0px;">
+
+
+                            <!-- btn table -->
+                            <table border="0" cellpadding="0"
+                                cellspacing="0" width="600"
+                                class="emailContainer"
+                                style="font-family: Helvetica, Arial,  'sans-serif'; border:0; border-left-width:medium;border-image-outset:0;border-image-repeat:stretch;border-image-slice:100%;border-image-source:none;border-image-width:1;margin:0;width:100%; max-width: 600px; border-collapse:collapse">
+                                <tbody>
+                                    <tr class="content-row"
+                                        style="border:0;line-height:26px;border-left-width:medium;border-image-outset:0;border-image-repeat:stretch;border-image-slice:100%;border-image-source:none;border-image-width:1;margin:0;width:100%;display:table">
+                                        <td class="dhx-col mobile-text-center"
+                                            align="center"
+                                            valign="middle"
+                                            style="border:0;border-left-width:medium;border-image-outset:0;border-image-repeat:stretch;border-image-slice:100%;border-image-source:none;border-image-width:1;margin:0;line-height:26px;  padding-top: 0px !important; text-align: center; margin: 0 auto; padding-bottom: 0px !important;">
+                                            <!-- Button -->
+                                            <table
+                                                class="button-tb"
+                                                style="border-collapse: separate !important; -ms-text-size-adjust: 100%; background-color: #fff;  -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0px auto; border-radius: 4px; margin-bottom: 0px; text-align: center"
+                                                border="0"
+                                                cellspacing="0"
+                                                cellpadding="0">
+                                                <tbody>
+                                                    <tr
+                                                        class="content-row dhx-row">
+                                                        <td class="button-td"
+                                                            style="line-height:43px; mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;width: 100% !important; padding: 0px 45px 2px 45px;">
+                                                            <a href= { Link }
+                                                                style="font-family:'Helvetica', sans-serif;font-size:16px;line-height:43px;text-decoration:none;font-weight: bold;color:#3366FF;display:inline-block; text-align: center"
+                                                                class="button-a"
+                                                                target="_blank">
+                                                               
+                                                                <!--[if mso]>&nbsp;<![endif]-->{ Caption }<!--[if mso]>&nbsp;<![endif]-->
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+   

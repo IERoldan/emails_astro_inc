@@ -1,0 +1,11 @@
+---
+const  {color_bk} = Astro.props;
+---
+
+<table width="600" class={color_bk} style="border-bottom:none; width:100%; max-width: 600px; min-width: 375px; border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; border-radius: 12px;">
+    <tr>
+        <td style="padding: 0px 40px!important; margin: 0px 40px!important; ">
+           <slot />
+        </td>
+    </tr>
+</table>

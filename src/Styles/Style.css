@@ -1,0 +1,260 @@
+
+* {
+	margin: 0px;
+		border: none
+	}
+
+	body{
+		font-family: Helvetica;
+	}
+
+	a {
+		color:#3366FF; 
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	.ic-color-white{
+		background-color: #fff;
+	}
+
+	.ic-color-gris{
+		background-color: #F4F6FF;
+	}
+
+	.ic-links {
+		margin: 24px 0px 33px 0px;
+	}
+
+	h3 {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px;
+	}
+	.ic-padding-fix {
+		padding: 10px 40px 13px 40px;
+	}
+
+
+	.ic-text-zocalo-caritas {
+		font-size: 16px!important;
+		line-height: 24px!important;
+	}
+
+	.img-mobile {
+		display: none !important;
+	}
+
+	.img-desktop {
+		display: block !important;
+	}
+
+	.ic-margen {
+		margin: 0px 0px 5px 0px!important;
+	}
+
+	.ajuste-margen {
+		margin: 0px 0px 0px 0px!important;
+		padding: 0px 0px 0px 0px!important;
+	}
+	
+	@media all and (min-width:513px) {
+
+		.img-mobile{
+			display: none!important;
+		}
+		.img-desktop{
+			display: block!important;
+		}
+
+		p{	
+			font-family:'Helvetica';			
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 26px!important;
+		}
+
+		p.ic-h1 {
+			font-size: 25px;
+			line-height: 30px;
+			margin-bottom: 16px;
+			color: #273480;
+			font-weight: 400;
+		}
+
+		
+		p.ic-h1 strong {
+			font-weight: 700;
+		}
+
+		h2,
+		h2 strong {
+			font-size: 20px !important;
+			line-height: 26px !important;
+			
+		}
+		.d-hide{
+			display: none!important;
+		}
+		.img-responsive{
+			width: 100%!important;
+			height: auto;
+		}
+	}
+	@media all and (max-width: 512px) {
+		.emailContainer {
+			width: 100% !important;
+		}
+
+		.ic-links {
+			margin: 0px 0px 26px 0px;
+		}
+
+
+		p.ic-h1{
+			margin-bottom: 16px;
+		}
+		
+		/* What it does: Forces table cells into full-width rows. */
+		.stack-column-center {
+			display: block !important;
+			width: 100% !important;
+			margin-left: auto;
+			margin-right: auto;
+			direction: ltr !important;
+			text-align: center !important;
+			padding: 0px !important;
+		}
+
+
+		.dhx-col {
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}
+
+		/*.ic-container-large{padding-left: 25px !important; padding-right: 25px !important;} */
+
+		.ic-boxed-content td:not(.button-td) {
+			padding: 15px !important;
+		}
+
+		.ic-boxed-content td.icon-td {
+			padding-right: 0px !important;
+		}
+
+		.mobile-text-center {
+			text-align: center !important;
+		}
+
+		.button-tb {
+			margin-left: auto !important;
+			margin-right: auto !important
+		}
+
+		.button-td {
+			text-align: center !important;
+			width: 100% !important
+		}
+
+		p.ic-h1 {
+			font-size: 25px !important;
+			line-height: 30px !important;
+			color: #273480;
+		}
+
+		h2,
+		h2 strong {
+			font-size: 18px !important;
+			line-height: 26px;
+		}
+
+		ul,
+		.quote {
+			width: auto !important
+		}
+
+		ul li {
+			text-align: left !important
+		}
+
+		.ic-margin-card {
+			border-bottom: 1px solid #D3DDFF; 
+			border-radius: 0px; 
+			padding-bottom: 24px;
+		}
+
+		.ic-margin-card-last {
+			border-bottom: 0px solid #D3DDFF; 
+			border-radius: 0px; 
+			padding-bottom: 24px;
+		}
+
+	}
+	@media all and (max-width:512px) {
+
+		.img-mobile {
+			display: block!important;
+		}
+
+		.img-desktop {
+			display: none!important;
+		}
+
+
+		p.ic-h1 {
+			font-size: 18px !important;
+			line-height: 24px !important;
+			font-weight: 400;
+		}
+		
+		p.ic-h1 strong {
+			font-weight: 700!important;
+		}
+
+		ul {
+			margin: 4px !important;
+		}
+
+		li {
+			font-size: 12px !important;
+			line-height: 24px !important;
+		}
+		p{				
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 22px;
+		}
+
+		.td-responsive{
+			display: inline-block!important;
+			width: 100%!important;
+			padding-bottom: 11px;
+			padding-top: 0px;
+		}
+
+		.img-responsive{
+			width: 100%!important;
+			height: auto;
+		}
+
+		.clase_border {
+			border-radius: 0px!important;
+		}
+		.ic-padding-fix {
+			padding: 15px 40px 15px 40px;
+		}
+
+		.ic-text-zocalo-caritas {
+			font-size: 14px!important;
+			line-height: 24px!important;
+		}
+		.ic-margen {
+			margin: 0 0 0px!important;
+		}
+		.padding-mobile {
+			padding: 0px 0px 0px 0px!important;
+		}
+		.ic-card-lab {
+			border: 0px!important; 
+		}
+	}

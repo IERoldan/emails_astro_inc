@@ -1,0 +1,11 @@
+---
+const  { texto } = Astro.props;
+const  { texto2 } = Astro.props;
+---
+
+<tr  class="content-row">
+    <td align="left" style="padding: 0px 40px;">
+        <p style="font-size: 25px;  line-height: 30px;  margin-bottom: 16px; color: #273480; font-weight: 400;" class="ic-h1 ic-margen"><Fragment set:html={texto} /></p>
+        <p style="font-size: 25px;  line-height: 30px;  margin-bottom: 16px; color: #273480; font-weight: 400;" class="ic-h1"><Fragment set:html={texto2} /></p>
+    </td>
+ </tr>

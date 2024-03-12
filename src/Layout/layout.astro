@@ -1,0 +1,24 @@
+---
+import MainHead from '../Components/header.astro';
+import MainFooter from '../Components/footer.astro';
+
+---
+<html lang="es">
+	<head>
+		<MainHead />
+	</head>
+	<body style="margin:0; padding:0; background-color: #fff">
+        <center>
+            <!-- table full content -->
+            <table class="emailContainer container" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #fff">
+                <tbody>
+                    <tr>
+                        <td align="center" valign="top" >
+                            <slot />
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+        </center>
+	</body>
+</html>
